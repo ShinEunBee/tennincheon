@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/tennincheon/static/css/main.f855e6bc.css",
+    "main.js": "/tennincheon/static/js/main.8b08105c.js",
+    "static/js/453.058c6848.chunk.js": "/tennincheon/static/js/453.058c6848.chunk.js",
+    "index.html": "/tennincheon/index.html",
+    "main.f855e6bc.css.map": "/tennincheon/static/css/main.f855e6bc.css.map",
+    "main.8b08105c.js.map": "/tennincheon/static/js/main.8b08105c.js.map",
+    "453.058c6848.chunk.js.map": "/tennincheon/static/js/453.058c6848.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.8b08105c.js"
+  ]
+}
