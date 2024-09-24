@@ -1,6 +1,15 @@
 import React, { useState, useEffect } from "react";
 
+type ExerciseData = {
+  "관리" : string,
+  "동별" : string,
+  "소재지" : string,
+  "시설명" : string,
+  "체육시설현황" : string
+}
+
 export default function InformationList() {
+
   const [list, setList] = useState([]);
 
   useEffect(() => {
@@ -16,7 +25,7 @@ export default function InformationList() {
 
         setList(
           data.data.filter(
-            (jsonData:any) => jsonData["체육시설현황"].indexOf("테니스") !== -1
+            (jsonData:ExerciseData) => jsonData["체육시설현황"].indexOf("테니스") !== -1
           )
         );
 
