@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/tennincheon/static/css/main.f855e6bc.css",
-    "main.js": "/tennincheon/static/js/main.8b08105c.js",
+    "main.css": "/tennincheon/static/css/main.4375aa00.css",
+    "main.js": "/tennincheon/static/js/main.a4e0635a.js",
     "static/js/453.058c6848.chunk.js": "/tennincheon/static/js/453.058c6848.chunk.js",
+    "static/media/Pretendard-Light.otf": "/tennincheon/static/media/Pretendard-Light.65372b5df865e8aa758a.otf",
+    "static/media/Pretendard-Medium.otf": "/tennincheon/static/media/Pretendard-Medium.902a118c9bf50b588451.otf",
+    "static/media/Pretendard-Bold.otf": "/tennincheon/static/media/Pretendard-Bold.4e72d46e664b88a6b5c8.otf",
     "index.html": "/tennincheon/index.html",
-    "main.f855e6bc.css.map": "/tennincheon/static/css/main.f855e6bc.css.map",
-    "main.8b08105c.js.map": "/tennincheon/static/js/main.8b08105c.js.map",
+    "main.4375aa00.css.map": "/tennincheon/static/css/main.4375aa00.css.map",
+    "main.a4e0635a.js.map": "/tennincheon/static/js/main.a4e0635a.js.map",
     "453.058c6848.chunk.js.map": "/tennincheon/static/js/453.058c6848.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.8b08105c.js"
+    "static/css/main.4375aa00.css",
+    "static/js/main.a4e0635a.js"
   ]
 }
