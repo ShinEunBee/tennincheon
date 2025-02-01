@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
 import ToggleMenu from "./ToggleMenu";
 import { ExerciseData } from "../type/ExerciseData";
+import styled from "styled-components";
+
+const List = styled.div`
+  
+`;
 
 export default function InformationList() {
   const [list, setList] = useState([]);
@@ -28,13 +33,10 @@ export default function InformationList() {
   }, []);
 
   return (
-    <>
+    <List>
       {list.map((item, index) => (
-        <div key={index}>
-          <ToggleMenu item={item}/>
-          <br />
-        </div>
+        <ToggleMenu item={item} key={index} />
       ))}
-    </>
+    </List>
   );
 }

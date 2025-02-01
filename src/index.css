@@ -22,9 +22,13 @@ body h2 {
 }
 
 .show {
-  display: block;
+  height: 150px;
+  visibility: visible;
+  transition: all 0.3s ease-in;
 }
 
 .hide {
-  display: none;
+  height: 0px;
+  visibility: hidden;
+  transition: all 0.3s ease-in;
 }
