@@ -16,10 +16,9 @@ const Box = styled.div`
 
 const TextBox = styled.div`
   background-color: white;
-  border: solid black 1px;
+  border: solid #e2e2e2 1px;
   border-radius: 15px;
-  padding: 10px;
-
+  padding: 20px;
   position: relative;
 `;
 
@@ -27,11 +26,14 @@ const TitleBox = styled.div`
   justify-content: space-between;
   display: flex;
   background-color: white;
+  font-family: "Pretendard-Regular";
 `;
 
 const ToggleText = styled.div`
-  background-color: #e3ff9f;
-  padding: 10px;
+  background-color: white;
+  margin-top: -30px;
+  padding: 40px 10px 10px 10px;
+  border-radius: 0px 0px 15px 15px;
 `;
 
 export default function ToggleMenu({ item }: DataProps) {
@@ -52,6 +54,13 @@ export default function ToggleMenu({ item }: DataProps) {
 
       <ToggleText className={display ? "show" : "hide"}>
         {item["소재지"]}
+        <iframe
+          src={
+            "https://www.google.com/maps?q=" + item["소재지"] + "&output=embed"
+          }
+          width="330"
+          height={280}
+        ></iframe>
       </ToggleText>
     </Box>
   );
