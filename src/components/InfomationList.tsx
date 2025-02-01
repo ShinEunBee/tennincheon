@@ -1,15 +1,8 @@
 import React, { useState, useEffect } from "react";
-
-type ExerciseData = {
-  "관리" : string,
-  "동별" : string,
-  "소재지" : string,
-  "시설명" : string,
-  "체육시설현황" : string
-}
+import ToggleMenu from "./ToggleMenu";
+import { ExerciseData } from "../type/ExerciseData";
 
 export default function InformationList() {
-
   const [list, setList] = useState([]);
 
   useEffect(() => {
@@ -22,13 +15,12 @@ export default function InformationList() {
     )
       .then((res) => res.json())
       .then((data) => {
-
         setList(
           data.data.filter(
-            (jsonData:ExerciseData) => jsonData["체육시설현황"].indexOf("테니스") !== -1
+            (jsonData: ExerciseData) =>
+              jsonData["체육시설현황"].indexOf("테니스") !== -1
           )
         );
-
       })
       .catch((err) => {
         console.error(err);
@@ -39,7 +31,7 @@ export default function InformationList() {
     <>
       {list.map((item, index) => (
         <div key={index}>
-          {item["동별"]} {item["시설명"]}
+          <ToggleMenu item={item}/>
           <br />
         </div>
       ))}

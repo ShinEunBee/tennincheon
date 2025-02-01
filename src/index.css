@@ -20,3 +20,11 @@ body {
 body h2 {
   font-family: "Pretendard-Bold";
 }
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
